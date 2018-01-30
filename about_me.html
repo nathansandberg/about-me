@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html> 
+<head>
+<title>About Nathan</title>
+
+
+</head>
+
+<body>
+
+<p>Where were you born?</p>
+
+<p>Where do you live?</p>
+
+<p>How are you getting home?</p>
+
+<p>What did you eat for breakfast?</p>
+
+<script>
+
+const begin = "You began life in ";
+const love = ' and you love ';
+const youare = " You're ";
+const home = " home.";
+const ate = " Really, You ate: ";
+
+
+const question1 = prompt('What state were you born in?');
+   console.log('User reply: ' + question1);
+   alert(begin + question1 + "!");
+
+   const question2 = prompt('What city do you live in?');
+   console.log('User reply: ' + question2);
+   alert(begin + question1 + love + question2 + "?");
+
+   const question3 = prompt('How are you getting home?');
+   console.log("User reply:  " + question3);
+   alert(begin + question1 + love + question2 + "?" + youare +  question3 + "ing" + " home");
+
+   const question4 = prompt('What on earth did you eat for breakfast?');
+   console.log('User reply: ' + question4);
+   alert(begin + question1 + love + question2 + "!" + youare +  question3 + "ing" + home + ate + question4 +"?" + " That stuff is gonna kill you!");
+
+/*
+prompt('What is your question?');
+alert('this is an answer');
+prompt('What is your other question?');
+alert('this too is an answer');
+prompt('Do you still have questions?');
+alert('this is an answer too');
+console.log('Nature of the question' + answer1);
+console.log('Nature of the question' + answer2);
+console.log('Nature of the question' + answer3);
+*/
+</script>
+
+</body>
+
+
+
+
+
+
+
+
+</html>
