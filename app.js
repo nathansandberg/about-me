@@ -5,56 +5,56 @@ const qOne = prompt('How many lies will Trump tell during the State of The Union
 if (qOne <= 1 ) {
     alert('Everyone can make a mistake');
 }
-else if (qOne > 1 && qOne < 10){
+else if (qOne >= 1 && qOne < 10){
     alert('I think you\'re a little generous here!');
-}   else if(qOne > 10){
+}   else if(qOne >= 10){
     alert('Unfortunately, you\'re probably not that far off!');
 }   else {
     alert('Who care\'s let\'s just impeach him!');
 }
-console.log('User choose: ' + qOne);
+console.log('User chose: ' + qOne);
 
 const qTwo = prompt('Will Trump disrespect another culture tonight?');
 
-if(qTwo === 'yes'){
+if(qTwo.toLowerCase() === 'yes'){
     alert('Pretty sad, huh?');
-}   else if(qTwo === 'no') {
+}   else if(qTwo.toLowerCase() === 'no') {
     alert('Let\'s agree to disagree!');
 }   else {
     alert('Two years, 11 months and 20 days to go!');
 }
-console.log('User choose: ' + qTwo);
+console.log('User chose: ' + qTwo);
 
 const qThree = prompt('Will Trump slur his words tonight ? ');
-if(qThree === 'yes') {
+if(qThree.toLowerCase() === 'yes') {
     alert('I hope his dentures don\'t fall out on Prime Time T.V!');
-}   else if(qThree === 'no'){
-    alert('That\'s nice of him.');
+}   else if(qThree.toLowerCase() === 'no'){
+    alert('That\'s very nice of him.');
 }   else{
     alert ('Two years, 11 months and 20 days to go!');
 }
 
-console.log('User choose: ' + qThree);
+console.log('User chose: ' + qThree);
 
 const qFour = prompt('Will Trump sound like an intelligent, qualified Leader of The Free World tonight?');
-if(qFour === 'yes'){
+if(qFour.toLowerCase() === 'yes'){
     alert('Let\'s watch together and argue all night.');
-}   else if(qFour === 'no'){
+}   else if(qFour.toLowerCase() === 'no'){
     alert('Surprise, surprise');
 }   else{
     alert('Two years, 11 months and 20 days to go!');
 }
-console.log('User choose: ' + qFour);
+console.log('User chose: ' + qFour);
 
 const qFive = prompt('Will Trump be re-elected?');
-if(qFive === 'yes'){
+if(qFive.toLowerCase() === 'yes'){
     alert('Hold on tight!');
-}   else if(qFive === 'no'){
-    alert('Hallelujah!')
+}   else if(qFive.toLowerCase() === 'no'){
+    alert('Hallelujah!');
 }   else{
     alert('Two years, 11 months and 20 days to go!');
 }
-console.log('User choose: ' + qFive);
+console.log('User chose: ' + qFive);
 
 
 
