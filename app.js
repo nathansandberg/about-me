@@ -1,5 +1,5 @@
 'use strict';
-
+/*
 const qOne = prompt('How many lies will Trump tell during the State of The Union address tonight?');
 
 if (qOne <= 1 ) {
@@ -56,9 +56,30 @@ if(qFive.toLowerCase() === 'yes' || qFive.toLowerCase() === 'y'){
 }
 console.log('User chose: ' + qFive);
 
+*/
 
 
+const qSix = prompt('I forgot to ask  you what your name is?');
 
+alert('Thanks, nice to meet you ' + qSix);
+
+const answer = '37';
+let qSeven = prompt(qSix + ' , can you guess what my favourite number is? ');
+
+for(let i = 0; i < 4; i++){
+    if(qSeven === answer){
+        alert('YOURE A MIND READER!');
+        break;
+    }else if(qSeven < answer){
+        alert('You\'re a little low, try a higher number');
+        qSeven = prompt('Take another guess');
+    }else if(qSeven > answer){
+        alert('A bit high...maybe try a little lower');
+        qSeven = prompt('Take another guess');
+    }else{
+        prompt('Come on! Guess a number!');
+    }
+}
 
 
 
