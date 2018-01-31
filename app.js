@@ -3,7 +3,7 @@
 const qOne = prompt('How many lies will Trump tell during the State of The Union address tonight?');
 
 if (qOne <= 1 ) {
-    alert('Everyone can make a mistake');
+    alert('Everyone can make a mistake once');
 }
 else if (qOne >= 1 && qOne < 10){
     alert('I think you\'re a little generous here!');
