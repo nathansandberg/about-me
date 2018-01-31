@@ -16,9 +16,9 @@ console.log('User chose: ' + qOne);
 
 const qTwo = prompt('Will Trump disrespect another culture tonight?');
 
-if(qTwo.toLowerCase() === 'yes'){
+if(qTwo.toLowerCase() === 'yes' || qTwo.toLowerCase() === 'y'){
     alert('Pretty sad, huh?');
-}   else if(qTwo.toLowerCase() === 'no') {
+}   else if(qTwo.toLowerCase() === 'no' || qTwo.toLowerCase() === 'n') {
     alert('Let\'s agree to disagree!');
 }   else {
     alert('Two years, 11 months and 20 days to go!');
@@ -26,9 +26,9 @@ if(qTwo.toLowerCase() === 'yes'){
 console.log('User chose: ' + qTwo);
 
 const qThree = prompt('Will Trump slur his words tonight ? ');
-if(qThree.toLowerCase() === 'yes') {
+if(qThree.toLowerCase() === 'yes' || qThree.toLowerCase() === 'y') {
     alert('I hope his dentures don\'t fall out on Prime Time T.V!');
-}   else if(qThree.toLowerCase() === 'no'){
+}   else if(qThree.toLowerCase() === 'no' || qThree.toLowerCase() === 'n'){
     alert('That\'s very nice of him.');
 }   else{
     alert ('Two years, 11 months and 20 days to go!');
@@ -37,9 +37,9 @@ if(qThree.toLowerCase() === 'yes') {
 console.log('User chose: ' + qThree);
 
 const qFour = prompt('Will Trump sound like an intelligent, qualified Leader of The Free World tonight?');
-if(qFour.toLowerCase() === 'yes'){
+if(qFour.toLowerCase() === 'yes' || qFour.toLowerCase === 'y'){
     alert('Let\'s watch together and argue all night.');
-}   else if(qFour.toLowerCase() === 'no'){
+}   else if(qFour.toLowerCase() === 'no' || qFour.toLowerCase() === 'n'){
     alert('Surprise, surprise');
 }   else{
     alert('Two years, 11 months and 20 days to go!');
@@ -47,9 +47,9 @@ if(qFour.toLowerCase() === 'yes'){
 console.log('User chose: ' + qFour);
 
 const qFive = prompt('Will Trump be re-elected?');
-if(qFive.toLowerCase() === 'yes'){
+if(qFive.toLowerCase() === 'yes' || qFive.toLowerCase() === 'y'){
     alert('Hold on tight!');
-}   else if(qFive.toLowerCase() === 'no'){
+}   else if(qFive.toLowerCase() === 'no' || qFive.toLowerCase() === 'n'){
     alert('Hallelujah!');
 }   else{
     alert('Two years, 11 months and 20 days to go!');
