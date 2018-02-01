@@ -1,5 +1,5 @@
 'use strict';
-/*
+
 const qOne = prompt('How many lies will Trump tell during the State of The Union address tonight?');
 
 if (qOne <= 1 ) {
@@ -56,8 +56,8 @@ if(qFive.toLowerCase() === 'yes' || qFive.toLowerCase() === 'y'){
 }
 console.log('User chose: ' + qFive);
 
-*/
 
+//sixth question
 
 const qSix = prompt('I forgot to ask  you what your name is?');
 
@@ -81,9 +81,22 @@ for(let i = 0; i < 4; i++){
     }
 }
 
+//first attempt at arrays, 7th question
 
-
-
+let question = prompt('Now can you guess the name of one my wives?');
+const wives = ['Geraldine', 'Bastille', 'Nancy'];
+for(let i = 0; i <= 5; i++){
+    if(wives.includes(question)){
+        alert('Correct! The names of my wives are: ' + wives);
+        break;
+    }else if(i === 5){
+        alert('Used up all your guesses! My wives names are Geraldine, Bastille and Nancy');
+        break;
+    }else{
+        alert('Take another shot');
+        question = prompt('What is one of my wives names?');
+    }}
+alert('Congratulations ' + qSix + ', You got BLANK out of 7 questions correct');
 
 
 /*
