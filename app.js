@@ -1,4 +1,7 @@
 'use strict';
+
+let affirmative = 0;
+
 const question1 = prompt('What state were you born in?');
 function ask1() {
     console.log('User reply: ' + question1);
@@ -35,6 +38,7 @@ function ask5() {
     }
     else if (qOne >= 1 && qOne < 10){
         alert('I think you\'re a little generous here!');
+        affirmative ++;
     }   else if(qOne >= 10){
         alert('Unfortunately, you\'re probably not that far off!');
     }   else {
@@ -49,6 +53,7 @@ function ask6() {
 
     if(qTwo.toLowerCase() === 'yes' || qTwo.toLowerCase() === 'y'){
         alert('Pretty sad, huh?');
+        affirmative ++;
     }   else if(qTwo.toLowerCase() === 'no' || qTwo.toLowerCase() === 'n') {
         alert('Let\'s agree to disagree!');
     }   else {
@@ -62,6 +67,7 @@ function ask7() {
     const qThree = prompt('Will Trump slur his words tonight ? ');
     if(qThree.toLowerCase() === 'yes' || qThree.toLowerCase() === 'y') {
         alert('I hope his dentures don\'t fall out on Prime Time T.V!');
+        affirmative ++;
     }else if(qThree.toLowerCase() === 'no' || qThree.toLowerCase() === 'n'){
         alert('That\'s very nice of him.');
     }   else{
@@ -79,6 +85,7 @@ function ask8() {
         alert('Let\'s watch together and argue all night.');
     }   else if(qFour.toLowerCase() === 'no' || qFour.toLowerCase() === 'n'){
         alert('Surprise, surprise');
+        affirmative ++;
     }   else{
         alert('Two years, 11 months and 20 days to go!');
     }
@@ -92,27 +99,33 @@ function ask9() {
         alert('Hold on tight!');
     }else if(qFive.toLowerCase() === 'no' || qFive.toLowerCase() === 'n'){
         alert('Hallelujah!');
-    }else{
+        affirmative ++;
+    }else
         alert('Two years, 11 months and 20 days to go!');
-    }
-    console.log('User chose: ' + qFive);
-}
 
-const qSix = prompt('I forgot to ask  you what your name is?');
-function ask9() {
-    alert('Thanks, nice to meet you ' + qSix);
+    console.log('User chose: ' + qFive);
 }
 
 ask9();
 
+const qSix = prompt('I forgot to ask  you what your name is?');
 function ask10() {
+    alert('Thanks, nice to meet you ' + qSix);
+}
+
+ask10();
+
+function ask11() {
     const answer = '37';
     let qSeven = prompt(qSix + ' , can you guess what my favourite number is? ');
 
-    for(let i = 0; i < 4; i++){
+    for(let i = 0; i <= 3; i++){
         if(qSeven === answer){
             alert('YOURE A MIND READER!');
+            affirmative ++;
             break;
+        }else if(i === 3) {
+            alert('Sorry ' + qSix + ' My number was 37. You are out of guesses! ');
         }else if(qSeven < answer){
             alert('You\'re a little low, try a higher number');
             qSeven = prompt('Take another guess');
@@ -124,30 +137,22 @@ function ask10() {
         }
     }
 }
-ask10();
-
-
+ask11();
+ask12();
 //first attempt at arrays, 7th question
-function ask11() {
-    let question = prompt('Now can you guess the name of one my wives?');
+function ask12() {
+    let question = prompt('What about trying to guess the name of one my wives?');
     const wives = ['Geraldine', 'Bastille', 'Nancy'];
-  
-    for(let i = 0; i <= 5; i++){
+
+    for(let i = 0; i <= 3; i++){
         if(wives.includes(question)){
-            alert('Correct! The names of my wives are: ' + wives);
+            alert('WOW, you\'re Correct ' + qSix + ' The names of my wives are: ' + wives);
+            affirmative ++;
             break;
-        }else if(i === 5){
-            alert('Used up all your guesses! My wives names are Geraldine, Bastille and Nancy');
-            break;
-        }else{
-            alert('Take another shot');
-            question = prompt('What is one of my wives names?');
-        }}
-    alert('Congratulations ' + qSix + ', You got BLANK out of 7 questions correct');
+        }else
+            alert('No Way, Take another guess...');
+        question = prompt('What is one of my wives names?');
+    }
 }
 
-ask11();
-
-
-
-
+alert('Congratulations ' + qSix + ', You got ' + affirmative + ' out of 7 questions correct !');
