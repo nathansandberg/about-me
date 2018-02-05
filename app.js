@@ -141,7 +141,7 @@ ask11();
 ask12();
 //first attempt at arrays, 7th question
 function ask12() {
-    let question = prompt('What about trying to guess the name of one my wives?');
+    let question = prompt('What about trying to guess the name of one my three wives?');
     const wives = ['Geraldine', 'Bastille', 'Nancy'];
 
     for(let i = 0; i <= 3; i++){
